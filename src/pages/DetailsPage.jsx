@@ -54,7 +54,7 @@ const DetailsPage = () => {
                         <div className={css`
                             width: 400px;
                             height: 600px;
-                            background-image: url(${data.Poster});
+                            background-image: url(${data?.Poster});
                             background-repeat: no-repeat;
                             background-size: contain;
                             background-position: center;
@@ -76,14 +76,14 @@ const DetailsPage = () => {
                                 margin-top: 20px;
                             }
                         `}>
-                            <h1>{data.Title}</h1>
-                            <p>{data.Year}</p>
+                            <h1>{data?.Title}</h1>
+                            <p>{data?.Year}</p>
                             <p className={css`
                                 margin-top: 20px;
                                 @media (max-width: 768px) {
                                     width: 100%;
                                 }
-                            `}>{data.Plot}</p>
+                            `}>{data?.Plot}</p>
 
 
                             <div className={css`
@@ -98,7 +98,7 @@ const DetailsPage = () => {
                                     align-items: center;
                                 `}>
                                     <img className={css`width: 50px`} src='imdb.png' />
-                                    <p>{data.imdbRating}</p>
+                                    <p>{data?.imdbRating}</p>
                                 </div>
                                 <div className={css`
                                     display: flex;
@@ -106,7 +106,7 @@ const DetailsPage = () => {
                                     align-items: center;
                                 `}>
                                     <img className={css`width: 50px`} src='metacritic.png' />
-                                    <p>{data.Metascore}</p>
+                                    <p>{data?.Metascore}</p>
                                 </div>
                             </div>
 
@@ -139,16 +139,16 @@ const DetailsPage = () => {
                                 @media (max-width: 768px) {
                                     text-align: center;
                                 }
-                            `}>Cast: {data.Actors}</p>
+                            `}>Cast: {data?.Actors}</p>
                             <p className={css`
                                 font-size: 14px;
-                            `}>Genre: {data.Genre}</p>
+                            `}>Genre: {data?.Genre}</p>
                             <p className={css`
                                 font-size: 14px;
-                            `}>Runtime: {data.Runtime}</p>
+                            `}>Runtime: {data?.Runtime}</p>
                             <p className={css`
                                 font-size: 14px;
-                            `}>Box Office: {data.BoxOffice}</p>
+                            `}>Box Office: {data?.BoxOffice}</p>
                         </div>
                     </div>
             }

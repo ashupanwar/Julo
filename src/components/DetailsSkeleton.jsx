@@ -1,37 +1,7 @@
-import React, { useEffect, useState } from 'react'
-import { useParams } from 'react-router-dom'
-import { getMovieById } from '../common/axiosRequest'
+import React from 'react'
 import { css } from '@emotion/css'
-import { useContext } from 'react';
-import { FavoritesContext } from '../state/FavoritesContext';
 
 const DetailsSkeleton = () => {
-
-    const [data, setData] = useState({});
-
-    const { favorites, setFavorites } = useContext(FavoritesContext);
-    const { imdbId } = useParams()
-
-    useEffect(() => {
-        getMovieById(imdbId).then(res => setData(res));
-    }, [imdbId])
-
-    const toggleFavorites = () => {
-        let newFav = { ...favorites };
-
-        if (!favorites[imdbId]) {
-            newFav[imdbId] = data;
-            console.log(newFav)
-            setFavorites(newFav)
-        }
-        else {
-            delete newFav[imdbId];
-            console.log(newFav)
-            setFavorites(newFav);
-        }
-
-        localStorage.setItem("favorites", JSON.stringify(newFav))
-    }
 
     return (
         <div className={css`

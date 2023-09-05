@@ -7,14 +7,14 @@ const Card = ({ data }) => {
     const navigate = useNavigate();
 
     const handleClick = () => {
-        navigate(`/${data.imdbID}`)
+        navigate(`/${data?.imdbID}`)
     }
 
     return (
         <div className={css`
             width: 200px;
             height: 300px;
-            background-image: url(${data.Poster});
+            background-image: url(${data?.Poster});
             background-position: center;
             background-size: cover;
             display: flex;
@@ -46,12 +46,12 @@ const Card = ({ data }) => {
             `}>
                 <h4 className={css`
                     margin: 0px;
-                `}>{data.Title}</h4>
+                `}>{data?.Title}</h4>
                 <p className={css`
                     margin: 0px;
                     margin-bottom: 10px;
                     font-size: 12px;
-                `}>{data.Year} ({data.Type})</p>
+                `}>{data?.Year} ({data?.Type})</p>
             </div>
 
         </div >

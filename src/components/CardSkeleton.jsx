@@ -1,7 +1,7 @@
 import React from 'react'
 import { css } from '@emotion/css'
 
-const CardSkeleton = ({ data }) => {
+const CardSkeleton = () => {
 
     return (
         <div className={`skeleton ${css`
