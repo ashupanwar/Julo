@@ -2,14 +2,14 @@ import './App.css';
 import ListPage from './pages/ListPage';
 import DetailsPage from './pages/DetailsPage';
 import {
-  createBrowserRouter,
+  createHashRouter,
   RouterProvider,
 } from "react-router-dom";
 import FavoritesPage from './pages/FavoritesPage';
 import { FavoritesContext } from './state/FavoritesContext'
 import { useEffect, useState } from 'react';
 
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
     path: "/",
     element: (
