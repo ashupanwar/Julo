@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/Julo/static/css/main.90247ba5.css",
-    "main.js": "/Julo/static/js/main.7030535f.js",
+    "main.js": "/Julo/static/js/main.c60b05ae.js",
     "index.html": "/Julo/index.html",
     "main.90247ba5.css.map": "/Julo/static/css/main.90247ba5.css.map",
-    "main.7030535f.js.map": "/Julo/static/js/main.7030535f.js.map"
+    "main.c60b05ae.js.map": "/Julo/static/js/main.c60b05ae.js.map"
   },
   "entrypoints": [
     "static/css/main.90247ba5.css",
-    "static/js/main.7030535f.js"
+    "static/js/main.c60b05ae.js"
   ]
 }
