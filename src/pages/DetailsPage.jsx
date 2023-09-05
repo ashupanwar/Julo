@@ -76,12 +76,17 @@ const DetailsPage = () => {
                                 margin-top: 20px;
                             }
                         `}>
-                            <h1>{data?.Title}</h1>
+                            <h1 className={css`
+                                @media (max-width: 768px) {
+                                    text-align:center;
+                                }
+                            `}>{data?.Title}</h1>
                             <p>{data?.Year}</p>
                             <p className={css`
                                 margin-top: 20px;
                                 @media (max-width: 768px) {
                                     width: 100%;
+                                    text-align: center;
                                 }
                             `}>{data?.Plot}</p>
 
